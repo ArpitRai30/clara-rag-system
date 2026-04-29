@@ -1,0 +1,122 @@
+[
+  {
+    "question": "Where is the NDSU Career and Advising Center located?",
+    "ground_truth": "The NDSU Career and Advising Center is located in Ceres Hall 306."
+  },
+  {
+    "question": "What is the primary email address for the NDSU Career and Advising Center?",
+    "ground_truth": "The primary email address is ndsu.cac@ndsu.edu."
+  },
+  {
+    "question": "What is the phone number of the NDSU Career and Advising Center?",
+    "ground_truth": "The phone number is 701-231-7111."
+  },
+  {
+    "question": "What are the standard office hours for the center?",
+    "ground_truth": "Standard office hours are Monday through Friday, 8:00 AM to 5:00 PM."
+  },
+  {
+    "question": "How do office hours change during the summer and break periods?",
+    "ground_truth": "Summer and break hours are Monday through Friday, 7:30 AM to 4:00 PM."
+  },
+  {
+    "question": "What is the primary career management tool used at NDSU for jobs and internships?",
+    "ground_truth": "The primary career management tool is Handshake."
+  },
+  {
+    "question": "What must incoming students do before creating a Handshake account?",
+    "ground_truth": "Incoming students must claim their NDSU email Bison Credentials first."
+  },
+  {
+    "question": "Which email domain should students use to log into Handshake, according to the NDSU guidance note?",
+    "ground_truth": "Students should use @ndsu.edu, not ndus.edu."
+  },
+  {
+    "question": "What types of opportunities are listed in Handshake according to the NDSU career site?",
+    "ground_truth": "Part-time, full-time, work-study, volunteer, graduate assistantship, and internship opportunities are listed in Handshake."
+  },
+  {
+    "question": "How is Handshake described on NDSU career resources pages?",
+    "ground_truth": "Handshake is described as the number one place students find jobs and internships."
+  },
+  {
+    "question": "Where are the large-scale Fall and Spring Career Expos typically held?",
+    "ground_truth": "They are typically held at the Fargodome."
+  },
+  {
+    "question": "How do employers register for the H.E.L.P.S. Career Fair?",
+    "ground_truth": "Employers register by emailing the Events Manager directly."
+  },
+  {
+    "question": "What is the minimum cumulative GPA required to register an internship for academic credit?",
+    "ground_truth": "The minimum cumulative GPA required is 2.0."
+  },
+  {
+    "question": "How many work hours are required in a semester to maintain full-time status while registered for 3 internship credits?",
+    "ground_truth": "A minimum of 300 work hours is required."
+  },
+  {
+    "question": "What academic requirement must F-1 students generally meet before off-campus work eligibility?",
+    "ground_truth": "They generally must complete one full academic year at NDSU before off-campus work eligibility."
+  },
+  {
+    "question": "Which department requires emailing an application form to ndsu.ime@ndsu.edu for IME 397 pre-approval?",
+    "ground_truth": "The Industrial and Manufacturing Engineering department requires that for IME 397."
+  },
+  {
+    "question": "On what date is the event Unlock Your Future: Meet MAHUBE-OTWA and Explore Career Paths listed?",
+    "ground_truth": "It is listed for Tuesday, April 21, 2026."
+  },
+  {
+    "question": "What time is the Unlock Your Future: Meet MAHUBE-OTWA and Explore Career Paths event?",
+    "ground_truth": "The event time is 12:00 PM to 2:00 PM."
+  },
+  {
+    "question": "Where is the Unlock Your Future: Meet MAHUBE-OTWA and Explore Career Paths event held?",
+    "ground_truth": "It is held in Nueta, Memorial Union."
+  },
+  {
+    "question": "Does the NDSU Job Shadow Program provide academic credit or payment?",
+    "ground_truth": "No. The NDSU Job Shadow Program does not provide academic credit or payment."
+  },
+  {
+    "question": "What happens if a student cancels less than two days before a job shadow session or no-shows?",
+    "ground_truth": "The student becomes ineligible for future job shadow sessions."
+  },
+  {
+    "question": "Which email is listed for questions about the NDSU Job Shadow Program?",
+    "ground_truth": "The listed contact email is shayla.schumacher@ndsu.edu."
+  },
+  {
+    "question": "In the NDSUintern Spotlight, what is Katelynn Riley's major?",
+    "ground_truth": "Her major is Apparel, Retail Merchandising, and Design."
+  },
+  {
+    "question": "In the NDSUintern Spotlight, which company did Katelynn Riley intern with?",
+    "ground_truth": "She interned with Mainstream Boutique."
+  },
+  {
+    "question": "In the NDSUintern Spotlight, what was Katelynn Riley's internship title?",
+    "ground_truth": "Her internship title was Small Business Intern."
+  },
+  {
+    "question": "In the NDSUintern Spotlight, where was Katelynn Riley's internship located?",
+    "ground_truth": "Her internship was located in Willmar, Minnesota."
+  },
+  {
+    "question": "In the NDSUintern Spotlight, what is Kai Ding's major?",
+    "ground_truth": "Kai Ding's major is Computer Science."
+  },
+  {
+    "question": "In the NDSUintern Spotlight, which company did Kai Ding intern with?",
+    "ground_truth": "Kai Ding interned with Van Clemens Wealth Management."
+  },
+  {
+    "question": "In the NDSUintern Spotlight, what was Kai Ding's internship title?",
+    "ground_truth": "Kai Ding's internship title was AI Research Intern."
+  },
+  {
+    "question": "In the NDSUintern Spotlight, where was Kai Ding's internship located?",
+    "ground_truth": "Kai Ding's internship was located in Bloomington, Minnesota."
+  }
+]

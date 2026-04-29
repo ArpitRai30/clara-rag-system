@@ -1,0 +1,960 @@
+{
+  "total_questions": 50,
+  "question_source": {
+    "in_scope": "data\\ground_truth_inscope_30.json",
+    "out_of_scope": "data\\ground_truth_outscope_20.json"
+  },
+  "scope_config": {
+    "mode": "manual_files",
+    "scope_definition": "IN_SCOPE from ground_truth_inscope_30.json, OUT_OF_SCOPE from ground_truth_outscope_20.json"
+  },
+  "in_scope_track": {
+    "total_questions": 30,
+    "bertscore": {
+      "bert_precision": 0.8158,
+      "bert_recall": 0.9273,
+      "bert_f1": 0.8675
+    },
+    "ragas": {
+      "faithfulness": 0.8254,
+      "answer_relevancy": 0.8254,
+      "context_precision": 0.8195,
+      "context_recall": 0.9833
+    },
+    "per_question": [
+      {
+        "question": "Where is the NDSU Career and Advising Center located?",
+        "ground_truth": "The NDSU Career and Advising Center is located in Ceres Hall 306.",
+        "answer": "According to the provided context, the NDSU Career and Advising Center is located at:\n\n306 Ceres Hall Dept 2802\n1301 Administration Ave\nPO Box 6050\nFargo, ND 58108-6050\n\nSource:\nhttps://career-advising.ndsu.edu/blog/page/28/\nhttps://career-advising.ndsu.edu/videos/employer-town-hall-june-15th/\nhttps://career-advising.ndsu.edu/blog/2022/04/15/advice-from-a-graduating-senior/"
+      },
+      {
+        "question": "What is the primary email address for the NDSU Career and Advising Center?",
+        "ground_truth": "The primary email address is ndsu.cac@ndsu.edu.",
+        "answer": "The primary email address for the NDSU Career and Advising Center is ndsu.cac@ndsu.edu.\n\nSources:\n[Context 1] https://career-advising.ndsu.edu/videos/employer-town-hall-session-fall-2022-recording/\n[Context 3] https://career-advising.ndsu.edu/jobs/oregon-state-university-academic-advising-specialist-6/"
+      },
+      {
+        "question": "What is the phone number of the NDSU Career and Advising Center?",
+        "ground_truth": "The phone number is 701-231-7111.",
+        "answer": "The phone number of the NDSU Career and Advising Center is 701-231-7111.\n\nSources:\n[Context 2]\nhttps://career-advising.ndsu.edu/jobs/starkey-hearing-technologies-patient-services-coordinator-pinesville-la/\n[Context 3]\nhttps://career-advising.ndsu.edu/videos/crop-and-weed-sciences/"
+      },
+      {
+        "question": "What are the standard office hours for the center?",
+        "ground_truth": "Standard office hours are Monday through Friday, 8:00 AM to 5:00 PM.",
+        "answer": "According to Context [Context 3], the standard office hours for the Career and Advising Center are:\n\n\"Please note changes to hours of operation during the summer, holidays, and days with no scheduled classes.\"\n\nHowever, it is specified that during the school year, the center can be found in Ceres Hall 306 from 8 am to 5 pm.\n\nSource: https://career-advising.ndsu.edu/events/2026/03/"
+      },
+      {
+        "question": "How do office hours change during the summer and break periods?",
+        "ground_truth": "Summer and break hours are Monday through Friday, 7:30 AM to 4:00 PM.",
+        "answer": "According to the provided context, during the summer and break periods, the office hours for the NDSU Career and Advising Center are:\n\nM Monday 7:30AM - 4:00PM\nT Tuesday 7:30AM - 4:00PM\nW Wednesday 8:00AM - 5:00PM\nTH Thursday 8:00AM - 5:00PM\nF Friday 8:00AM - 5:00PM\n\nSource:\nhttp://career-advising.ndsu.edu/\nhttps://career-advising.ndsu.edu"
+      },
+      {
+        "question": "What is the primary career management tool used at NDSU for jobs and internships?",
+        "ground_truth": "The primary career management tool is Handshake.",
+        "answer": "According to the provided context, the primary career management tool used at NDSU for jobs and internships is Handshake. This is mentioned in both Context 1 and Context 2.\n\nContext 1: \"Handshake is the official North Dakota State University student and alumni job board, posting information about current on-campus employment, including work-study and internships, both part-time and full-time positions for graduating students, or graduate assistantship opportunities.\"\n\nContext 2: \"Handshake : This is the first place we encourage students to look for opportunities. Handshake was specifically created for college students. Employers turn to this job board first in order to find student talent. Login with your NDSU student credentials. (NDSU Alumni have access to Handshake as well!)\"\n\nSource:\nhttps://career-advising.ndsu.edu/channels/career-support/posts/page/19/\nhttps://career-advising.ndsu.edu/resources/how-to-find-an-internship/"
+      },
+      {
+        "question": "What must incoming students do before creating a Handshake account?",
+        "ground_truth": "Incoming students must claim their NDSU email Bison Credentials first.",
+        "answer": "According to the provided context, incoming students must \"Claim your NDSU Email (Bison Credentials) here\" before creating a Handshake account. [Context 1]\n\nSource:\nhttps://career-advising.ndsu.edu/handshake/"
+      },
+      {
+        "question": "Which email domain should students use to log into Handshake, according to the NDSU guidance note?",
+        "ground_truth": "Students should use @ndsu.edu, not ndus.edu.",
+        "answer": "According to the provided context, students should use \"@ndsu.edu\" to log into Handshake.\n\nSource:\n[Context 1]\nhttps://career-advising.ndsu.edu/handshake/"
+      },
+      {
+        "question": "What types of opportunities are listed in Handshake according to the NDSU career site?",
+        "ground_truth": "Part-time, full-time, work-study, volunteer, graduate assistantship, and internship opportunities are listed in Handshake.",
+        "answer": "According to the provided context, Handshake is a platform where students can post their online profile and apply for internships and other opportunities. Employers can post open positions that students can apply to. The types of opportunities listed in Handshake include all types of jobs and internships for students and alumni to see and apply to.\n\nSource: [Context 3] Ask a CM! – Career and Advising Center – North Dakota State University"
+      },
+      {
+        "question": "How is Handshake described on NDSU career resources pages?",
+        "ground_truth": "Handshake is described as the number one place students find jobs and internships.",
+        "answer": "According to the provided context, Handshake is described as an \"online platform\" that is introduced as a resource for incoming students this fall. It is mentioned in the article titled \"Welcome to NDSU!\" under the section \"Handshake Handshake is an online platform that allows you to search and apply for internships, jobs, and graduate school opportunities.\"\n\nSource:\nhttps://career-advising.ndsu.edu/channels/explore-majors-careers-opportunities/posts/page/1/\nhttps://career-advising.ndsu.edu/videos/creating-an-employer-account-for-ndsu-faculty-and-staff/"
+      },
+      {
+        "question": "Where are the large-scale Fall and Spring Career Expos typically held?",
+        "ground_truth": "They are typically held at the Fargodome.",
+        "answer": "According to the provided context, the large-scale Fall Career Expo is typically held at the Fargodome.\n\nSource:\n[Context 1] https://career-advising.ndsu.edu/blog/page/7/\n[Context 3] https://career-advising.ndsu.edu/channels/career-fairs/\n\nThe Spring Career Expo is also typically held at the Fargodome.\n\nSource:\n[Context 2] https://career-advising.ndsu.edu/channels/career-fairs/\n[Context 3] https://career-advising.ndsu.edu/channels/career-fairs/"
+      },
+      {
+        "question": "How do employers register for the H.E.L.P.S. Career Fair?",
+        "ground_truth": "Employers register by emailing the Events Manager directly.",
+        "answer": "According to the provided context, employers can register for the H.E.L.P.S. Career Fair by emailing the Events Manager to enquire about registering. The registration opens on December 1, 2025, and closes on February 18, 2026.\n\nSource:\n[Context 1]"
+      },
+      {
+        "question": "What is the minimum cumulative GPA required to register an internship for academic credit?",
+        "ground_truth": "The minimum cumulative GPA required is 2.0.",
+        "answer": "According to Context 1, students have a minimum cumulative 2.0 GPA prior to internship registration.\n\nSource:\nhttps://career-advising.ndsu.edu/blog/2019/10/25/ask-a-cm-4/"
+      },
+      {
+        "question": "How many work hours are required in a semester to maintain full-time status while registered for 3 internship credits?",
+        "ground_truth": "A minimum of 300 work hours is required.",
+        "answer": "According to the context, students can maintain a full-time student status by registering for 3 credits through the NDSU Career and Advising Center or by working 300+ hours in a given semester.\n\nSource:\nhttps://career-advising.ndsu.edu/blog/2019/10/25/ask-a-cm-4/"
+      },
+      {
+        "question": "What academic requirement must F-1 students generally meet before off-campus work eligibility?",
+        "ground_truth": "They generally must complete one full academic year at NDSU before off-campus work eligibility.",
+        "answer": "According to the provided context, there is no specific information about the academic requirement that F-1 students must meet before off-campus work eligibility. However, I can suggest that you refer to the International Student Employment Resources page [Context 1] for more information on employment documentation and practices.\n\nSource:\nhttps://career-advising.ndsu.edu/resources/international-student-employment-resources/"
+      },
+      {
+        "question": "Which department requires emailing an application form to ndsu.ime@ndsu.edu for IME 397 pre-approval?",
+        "ground_truth": "The Industrial and Manufacturing Engineering department requires that for IME 397.",
+        "answer": "Based on the provided context, I don't have enough information in my knowledge base to answer this question accurately.\n\nThe contexts provided do not mention any specific department or requirement for emailing an application form to ndsu.ime@ndsu.edu for IME 397 pre-approval. Therefore, I cannot provide a direct answer.\n\nSource: [Context 1], [Context 2], and [Context 3]"
+      },
+      {
+        "question": "On what date is the event Unlock Your Future: Meet MAHUBE-OTWA and Explore Career Paths listed?",
+        "ground_truth": "It is listed for Tuesday, April 21, 2026.",
+        "answer": "According to the provided context, the event \"Unlock Your Future: Meet MAHUBE-OTWA & Explore Career Paths!\" is scheduled for:\n\n* Date: Tuesday, April 21st\n* Time: 12pm - 2pm\n\nSource:\n[Context 1]\n[Context 2]\n[Context 3]\n\nhttps://career-advising.ndsu.edu/channels/career-support/posts/page/10/\nhttps://career-advising.ndsu.edu/channels/career-support/posts/page/23/\nhttps://career-advising.ndsu.edu/channels/career-support/posts/page/9/"
+      },
+      {
+        "question": "What time is the Unlock Your Future: Meet MAHUBE-OTWA and Explore Career Paths event?",
+        "ground_truth": "The event time is 12:00 PM to 2:00 PM.",
+        "answer": "According to Context 1, the \"Unlock Your Future: Meet MAHUBE-OTWA & Explore Career Paths!\" event will take place on Tuesday, April 21st from 12pm - 2pm.\n\nSource:\nhttps://career-advising.ndsu.edu/events/main/"
+      },
+      {
+        "question": "Where is the Unlock Your Future: Meet MAHUBE-OTWA and Explore Career Paths event held?",
+        "ground_truth": "It is held in Nueta, Memorial Union.",
+        "answer": "According to the provided context, the \"Unlock Your Future: Meet MAHUBE-OTWA & Explore Career Paths!\" event will be held at Nueta, Memorial Union on North Dakota State University's campus.\n\nSource:\n[Context 1] https://career-advising.ndsu.edu/events/main/\n[Context 3] https://career-advising.ndsu.edu/channels/career-support/posts/page/10/"
+      },
+      {
+        "question": "Does the NDSU Job Shadow Program provide academic credit or payment?",
+        "ground_truth": "No. The NDSU Job Shadow Program does not provide academic credit or payment.",
+        "answer": "According to the provided context, there is no mention of the NDSU Job Shadow Program providing academic credit or payment. The program's focus is on giving students the chance to connect with alumni, community members, and industry professionals to explore potential careers.\n\nSource: https://career-advising.ndsu.edu/ndsu-job-shadow-program/"
+      },
+      {
+        "question": "What happens if a student cancels less than two days before a job shadow session or no-shows?",
+        "ground_truth": "The student becomes ineligible for future job shadow sessions.",
+        "answer": "According to the context, students who cancel less than two days prior or no show will not be eligible for future sessions.\n\nSource:\n[Context 1] https://career-advising.ndsu.edu/ndsu-professional-preview-days-host-list-april-2026/\n[Context 2] https://career-advising.ndsu.edu/ndsu-job-shadow-program/"
+      },
+      {
+        "question": "Which email is listed for questions about the NDSU Job Shadow Program?",
+        "ground_truth": "The listed contact email is shayla.schumacher@ndsu.edu.",
+        "answer": "According to the provided context, the email listed for questions about the NDSU Job Shadow Program is:\n\nshayla.schumacher@ndsu.edu\n\nSource:\nhttps://career-advising.ndsu.edu/ndsu-job-shadow-program/"
+      },
+      {
+        "question": "In the NDSUintern Spotlight, what is Katelynn Riley's major?",
+        "ground_truth": "Her major is Apparel, Retail Merchandising, and Design.",
+        "answer": "According to the provided context [Context 1], Katelynn Riley's major is Apparel, Retail Merchandising, and Design.\n\nSource: https://career-advising.ndsu.edu/blog/2025/12/10/ndsuintern-spotlight-katelynn-riley/"
+      },
+      {
+        "question": "In the NDSUintern Spotlight, which company did Katelynn Riley intern with?",
+        "ground_truth": "She interned with Mainstream Boutique.",
+        "answer": "According to the provided context [Context 1], Katelynn Riley interned with Mainstream Boutique.\n\nSource: https://career-advising.ndsu.edu/blog/2025/12/10/ndsuintern-spotlight-katelynn-riley/"
+      },
+      {
+        "question": "In the NDSUintern Spotlight, what was Katelynn Riley's internship title?",
+        "ground_truth": "Her internship title was Small Business Intern.",
+        "answer": "According to the provided context [Context 1], Katelynn Riley's internship title was \"Small Business Intern\".\n\nSource: https://career-advising.ndsu.edu/blog/2025/12/10/ndsuintern-spotlight-katelynn-riley/"
+      },
+      {
+        "question": "In the NDSUintern Spotlight, where was Katelynn Riley's internship located?",
+        "ground_truth": "Her internship was located in Willmar, Minnesota.",
+        "answer": "According to Context 3, Katelynn Riley's internship was located in Willmar, MN."
+      },
+      {
+        "question": "In the NDSUintern Spotlight, what is Kai Ding's major?",
+        "ground_truth": "Kai Ding's major is Computer Science.",
+        "answer": "According to Context 3, Kai Ding's major is Computer Science.\n\nSource: https://career-advising.ndsu.edu/blog/2025/12/03/ndsuintern-spotlight-kai-ding/"
+      },
+      {
+        "question": "In the NDSUintern Spotlight, which company did Kai Ding intern with?",
+        "ground_truth": "Kai Ding interned with Van Clemens Wealth Management.",
+        "answer": "According to the provided context [Context 1], Kai Ding interned with Van Clemens Wealth Management.\n\nSource: https://career-advising.ndsu.edu/blog/2025/12/03/ndsuintern-spotlight-kai-ding/"
+      },
+      {
+        "question": "In the NDSUintern Spotlight, what was Kai Ding's internship title?",
+        "ground_truth": "Kai Ding's internship title was AI Research Intern.",
+        "answer": "According to the provided context [Context 1], Kai Ding's internship title was \"AI Research Intern\".\n\nSource: https://career-advising.ndsu.edu/blog/2025/12/03/ndsuintern-spotlight-kai-ding/"
+      },
+      {
+        "question": "In the NDSUintern Spotlight, where was Kai Ding's internship located?",
+        "ground_truth": "Kai Ding's internship was located in Bloomington, Minnesota.",
+        "answer": "According to Context 3, Kai Ding's internship was located in Bloomington, MN."
+      }
+    ]
+  },
+  "out_of_scope_track": {
+    "total_questions": 20,
+    "abstention": {
+      "tp_abstain_ood": 16,
+      "fp_abstain_in_scope": 1,
+      "fn_answered_ood": 4,
+      "abstention_precision": 0.9412,
+      "abstention_recall": 0.8,
+      "abstention_f1": 0.8649,
+      "false_answer_rate": 0.2
+    },
+    "per_question": [
+      {
+        "question": "What is NDSU's athletic mascot?",
+        "ground_truth": "NDSU's athletic mascot is Thundar the Bison.",
+        "answer": "I don't have enough information in my knowledge base to answer this question accurately.\n\nThe provided context only includes information about career advice, job postings, company reviews from employees, and rankings of the best companies and industry employers. There is no mention of athletics or a mascot. Therefore, I cannot provide an accurate answer based on the given context.",
+        "route_status": "VERIFIED",
+        "route_score": 0.929,
+        "is_abstained": true,
+        "evidence_overlap": 0.375
+      },
+      {
+        "question": "What is the athletics nickname used by NDSU teams?",
+        "ground_truth": "NDSU teams are known as the Bison.",
+        "answer": "The athletics nickname used by NDSU teams is not mentioned in the provided context. Therefore, I don't have enough information in my knowledge base to answer this question accurately.\n\nSources:\n[Context 1]\n[Context 2]\n[Context 3]",
+        "route_status": "VERIFIED",
+        "route_score": 1.0,
+        "is_abstained": true,
+        "evidence_overlap": 0.1429
+      },
+      {
+        "question": "What are NDSU's official school colors?",
+        "ground_truth": "NDSU's official school colors are green and yellow.",
+        "answer": "According to the provided context, I don't have enough information in my knowledge base to answer this question accurately. The contexts only mention the Career and Advising Center, Theatre Arts, and contact information for the university, but do not specify the official school colors.\n\nSource:\n[Context 1]\n[Context 2]",
+        "route_status": "VERIFIED",
+        "route_score": 1.0,
+        "is_abstained": true,
+        "evidence_overlap": 0.2222
+      },
+      {
+        "question": "In what year was NDSU founded?",
+        "ground_truth": "NDSU was founded in 1890.",
+        "answer": "I don't have enough information in my knowledge base to answer this question accurately. The provided context does not contain any information about the founding year of North Dakota State University (NDSU).",
+        "route_status": "VERIFIED",
+        "route_score": 1.0,
+        "is_abstained": true,
+        "evidence_overlap": 0.2
+      },
+      {
+        "question": "In which city is NDSU located?",
+        "ground_truth": "NDSU is located in Fargo, North Dakota.",
+        "answer": "Fargo, on the Minnesota border. (Source: https://career-advising.ndsu.edu/jobs/ndsu-human-resources-and-payroll-communications-coordinator-2958764/)",
+        "route_status": "VERIFIED",
+        "route_score": 0.9273,
+        "is_abstained": false,
+        "evidence_overlap": 0.8571
+      },
+      {
+        "question": "What does the acronym NDSU stand for?",
+        "ground_truth": "NDSU stands for North Dakota State University.",
+        "answer": "NDSU stands for North Dakota State University.\n\nSources:\n[Context 1] https://career-advising.ndsu.edu/videos/theatre-arts/\n[Context 2] https://career-advising.ndsu.edu/videos/psychology/\n[Context 3] https://career-advising.ndsu.edu/jobs/ndsu-human-resources-and-payroll-communications-coordinator-2958764/",
+        "route_status": "VERIFIED",
+        "route_score": 1.0,
+        "is_abstained": false,
+        "evidence_overlap": 0.8571
+      },
+      {
+        "question": "What type of institution is NDSU?",
+        "ground_truth": "NDSU is a public land-grant research university.",
+        "answer": "North Dakota State University (NDSU) is a student-focused, land-grant, research university.",
+        "route_status": "VERIFIED",
+        "route_score": 1.0,
+        "is_abstained": false,
+        "evidence_overlap": 1.0
+      },
+      {
+        "question": "What is the primary domain for NDSU's main website?",
+        "ground_truth": "NDSU's primary website domain is ndsu.edu.",
+        "answer": "I don't have enough information in my knowledge base to answer this question accurately. The provided context only includes specific pages or resources from NDSU, but it does not contain information about the university's main website.",
+        "route_status": "VERIFIED",
+        "route_score": 0.9237,
+        "is_abstained": true,
+        "evidence_overlap": 0.2857
+      },
+      {
+        "question": "Which NCAA division does NDSU compete in?",
+        "ground_truth": "NDSU competes in NCAA Division I.",
+        "answer": "According to the provided context, I don't have enough information in my knowledge base to answer this question accurately. The contexts only provide information about the Career and Advising Center at North Dakota State University (NDSU) and do not mention NCAA divisions.\n\nSource:\n[Context 1]\n[Context 2]\n[Context 3]",
+        "route_status": "VERIFIED",
+        "route_score": 1.0,
+        "is_abstained": true,
+        "evidence_overlap": 0.1667
+      },
+      {
+        "question": "Which conference is NDSU football associated with?",
+        "ground_truth": "NDSU football is associated with the Missouri Valley Football Conference.",
+        "answer": "I don't have enough information in my knowledge base to answer this question accurately.\n\nThe provided context does not contain any information about the conference that NDSU football is associated with. Therefore, I cannot provide an accurate answer.",
+        "route_status": "VERIFIED",
+        "route_score": 0.7517,
+        "is_abstained": true,
+        "evidence_overlap": 0.4444
+      },
+      {
+        "question": "Which conference are many NDSU athletics programs associated with?",
+        "ground_truth": "Many NDSU athletics programs are associated with The Summit League.",
+        "answer": "According to the context, there is no information provided about NDSU athletics programs or conferences. Therefore, I don't have enough information in my knowledge base to answer this question accurately.\n\nSource:\n[Context 1]\n[Context 2]\n[Context 3]",
+        "route_status": "VERIFIED",
+        "route_score": 0.8282,
+        "is_abstained": true,
+        "evidence_overlap": 0.5
+      },
+      {
+        "question": "What is the name of NDSU's student newspaper?",
+        "ground_truth": "NDSU's student newspaper is The Spectrum.",
+        "answer": "I don't have enough information in my knowledge base to answer this question accurately. The provided context does not mention the name of NDSU's student newspaper.\n\nSource:\n[Context 1]\n[Context 2]\n[Context 3]",
+        "route_status": "VERIFIED",
+        "route_score": 0.8985,
+        "is_abstained": true,
+        "evidence_overlap": 0.1429
+      },
+      {
+        "question": "What is the name of the NDSU fight song?",
+        "ground_truth": "NDSU's fight song is On Bison.",
+        "answer": "I don't have enough information in my knowledge base to answer this question accurately. The provided context does not mention the name of the NDSU fight song.",
+        "route_status": "VERIFIED",
+        "route_score": 0.9093,
+        "is_abstained": true,
+        "evidence_overlap": 0.2857
+      },
+      {
+        "question": "Which major college football subdivision does NDSU football play in?",
+        "ground_truth": "NDSU football plays in the NCAA FCS subdivision.",
+        "answer": "I don't have enough information in my knowledge base to answer this question accurately.\n\nThe provided contexts do not contain any information about NDSU football or its division. The contexts only provide general information about the university, its departments, and job postings. Therefore, I cannot provide an accurate answer based on the given context.",
+        "route_status": "VERIFIED",
+        "route_score": 0.8207,
+        "is_abstained": true,
+        "evidence_overlap": 0.375
+      },
+      {
+        "question": "What is the official name of NDSU's libraries unit?",
+        "ground_truth": "The official libraries unit is NDSU Libraries.",
+        "answer": "According to the provided context, there is no mention of the official name of NDSU's libraries unit. Therefore, I don't have enough information in my knowledge base to answer this question accurately.\n\nSource: https://career-advising.ndsu.edu/jobs/idaho-department-of-health-and-welfare-family-service-worker-5/",
+        "route_status": "VERIFIED",
+        "route_score": 0.9442,
+        "is_abstained": true,
+        "evidence_overlap": 0.1667
+      },
+      {
+        "question": "What is the name of NDSU's central student union building?",
+        "ground_truth": "NDSU's central student union building is the Memorial Union.",
+        "answer": "I don't have enough information in my knowledge base to answer this question accurately.\n\nThe provided context does not mention the name of NDSU's central student union building. Therefore, I cannot provide an accurate answer.",
+        "route_status": "VERIFIED",
+        "route_score": 0.8992,
+        "is_abstained": true,
+        "evidence_overlap": 0.2222
+      },
+      {
+        "question": "What university system is NDSU part of?",
+        "ground_truth": "NDSU is part of the North Dakota University System.",
+        "answer": "Based on the provided context, I don't have enough information in my knowledge base to answer this question accurately.\n\nHowever, if you're looking for a broader answer, North Dakota State University (NDSU) is a public research university located in Fargo, North Dakota. It's part of the Minnesota State Colleges and Universities system (Minnesota State).\n\nSource:\n[Context 1] https://career-advising.ndsu.edu/videos/theatre-arts/\n[Context 3] https://career-advising.ndsu.edu/videos/psychology/",
+        "route_status": "VERIFIED",
+        "route_score": 0.7702,
+        "is_abstained": true,
+        "evidence_overlap": 0.7778
+      },
+      {
+        "question": "What is the official abbreviation commonly used for North Dakota State University athletics?",
+        "ground_truth": "The official abbreviation commonly used is NDSU Bison.",
+        "answer": "According to the provided context, there is no information about the official abbreviation commonly used for North Dakota State University athletics. Therefore, I don't have enough information in my knowledge base to answer this question accurately.\n\nSource:\n[Context 1]\n[Context 2]\n[Context 3]",
+        "route_status": "VERIFIED",
+        "route_score": 0.9145,
+        "is_abstained": true,
+        "evidence_overlap": 0.125
+      },
+      {
+        "question": "What is the name of NDSU's extension service organization?",
+        "ground_truth": "It is known as NDSU Extension.",
+        "answer": "Based on the provided context, I found that the information about NDSU's extension service organization is not present in either Context 1 or Context 2. Therefore, I don't have enough information in my knowledge base to answer this question accurately.\n\nSource:\n[Context 1]\nhttps://career-advising.ndsu.edu/blog/2019/04/18/ndsuintern-spotlight-22/\n[Context 2]\nhttps://career-advising.ndsu.edu/jobs/idaho-department-of-health-and-welfare-family-service-worker-5/",
+        "route_status": "VERIFIED",
+        "route_score": 1.0,
+        "is_abstained": true,
+        "evidence_overlap": 0.1667
+      },
+      {
+        "question": "What is the university's state location as shown on official NDSU pages?",
+        "ground_truth": "The university is located in North Dakota.",
+        "answer": "The university's state location, as shown on official NDSU pages, is North Dakota. This information can be found in the following contexts:\n\n[Context 1]\n2802 1301 Administration Ave PO Box 6050 Fargo, ND 58108-6050 701-231-7111 ndsu.cac@ndsu.edu Privacy Policy | Terms of Service Copyright © 2026 North Dakota State University\n\nSource: https://career-advising.ndsu.edu/blog/2019/04/18/ndsuintern-spotlight-22/\n\n[Context 2]\n306 Ceres Hall Dept 2802 1301 Administration Ave PO Box 6050 Fargo, ND 58108-6050 701-231-7111 ndsu.cac@ndsu.edu Privacy Policy | Terms of Service Copyright © 2026 North Dakota State University\n\nSource: https://career-advising.ndsu.edu/jobs/idaho-department-of-health-and-welfare-social-worker/\n\n[Context 3]\neres Hall Dept 2802 1301 Administration Ave PO Box 6050 Fargo, ND 58108-6050 701-231-7111 ndsu.cac@ndsu.edu Privacy Policy | Terms of Service Copyright ©",
+        "route_status": "VERIFIED",
+        "route_score": 0.9364,
+        "is_abstained": false,
+        "evidence_overlap": 0.4286
+      }
+    ]
+  },
+  "summary": {
+    "core_rag_quality": {
+      "track": "in_scope",
+      "question_count": 30
+    },
+    "abstention_quality": {
+      "track": "out_of_scope",
+      "question_count": 20
+    }
+  },
+  "extension_summary_in_scope": {
+    "bertscore": {
+      "bert_precision": 0.8158,
+      "bert_recall": 0.9273,
+      "bert_f1": 0.8675
+    },
+    "ragas": {
+      "enabled": true,
+      "scores": {
+        "faithfulness": 0.8254,
+        "answer_relevancy": 0.8254,
+        "context_precision": 0.8195,
+        "context_recall": 0.9833
+      }
+    }
+  },
+  "trust_verification": {
+    "total_questions": 50,
+    "abstention_rate": 0.0,
+    "avg_confidence_score": 0.9493,
+    "avg_weighted_confidence_score": 0.9531,
+    "avg_claims_per_answer": 10.3,
+    "total_claims": 515,
+    "supported_claim_rate": 0.9437,
+    "contradicted_claim_rate": 0.0039,
+    "not_found_claim_rate": 0.0524
+  },
+  "per_question": [
+    {
+      "question": "Where is the NDSU Career and Advising Center located?",
+      "ground_truth": "The NDSU Career and Advising Center is located in Ceres Hall 306.",
+      "trust_answer_raw": "According to the provided context, the NDSU Career and Advising Center is located at:\n\n306 Ceres Hall Dept 2802\n1301 Administration Ave\nPO Box 6050\nFargo, ND 58108-6050\n\nSource:\nhttps://career-advising.ndsu.edu/blog/page/28/\nhttps://career-advising.ndsu.edu/videos/employer-town-hall-june-15th/\nhttps://career-advising.ndsu.edu/blog/2022/04/15/advice-from-a-graduating-senior/",
+      "trust_answer_routed": "According to the provided context, the NDSU Career and Advising Center is located at:\n\n306 Ceres Hall Dept 2802\n1301 Administration Ave\nPO Box 6050\nFargo, ND 58108-6050\n\nSource:\nhttps://career-advising.ndsu.edu/blog/page/28/\nhttps://career-advising.ndsu.edu/videos/employer-town-hall-june-15th/\nhttps://career-advising.ndsu.edu/blog/2022/04/15/advice-from-a-graduating-senior/",
+      "route_status": "VERIFIED",
+      "route_score": 1.0,
+      "claim_count": 7,
+      "scope": "IN_SCOPE",
+      "evidence_overlap": 0.9167
+    },
+    {
+      "question": "What is the primary email address for the NDSU Career and Advising Center?",
+      "ground_truth": "The primary email address is ndsu.cac@ndsu.edu.",
+      "trust_answer_raw": "The primary email address for the NDSU Career and Advising Center is ndsu.cac@ndsu.edu.\n\nSources:\n[Context 1] https://career-advising.ndsu.edu/videos/employer-town-hall-session-fall-2022-recording/\n[Context 3] https://career-advising.ndsu.edu/jobs/oregon-state-university-academic-advising-specialist-6/",
+      "trust_answer_routed": "The primary email address for the NDSU Career and Advising Center is ndsu.cac@ndsu.edu.\n\nSources:\n[Context 1] https://career-advising.ndsu.edu/videos/employer-town-hall-session-fall-2022-recording/\n[Context 3] https://career-advising.ndsu.edu/jobs/oregon-state-university-academic-advising-specialist-6/",
+      "route_status": "VERIFIED",
+      "route_score": 1.0,
+      "claim_count": 3,
+      "scope": "IN_SCOPE",
+      "evidence_overlap": 0.5
+    },
+    {
+      "question": "What is the phone number of the NDSU Career and Advising Center?",
+      "ground_truth": "The phone number is 701-231-7111.",
+      "trust_answer_raw": "The phone number of the NDSU Career and Advising Center is 701-231-7111.\n\nSources:\n[Context 2]\nhttps://career-advising.ndsu.edu/jobs/starkey-hearing-technologies-patient-services-coordinator-pinesville-la/\n[Context 3]\nhttps://career-advising.ndsu.edu/videos/crop-and-weed-sciences/",
+      "trust_answer_routed": "The phone number of the NDSU Career and Advising Center is 701-231-7111.\n\nSources:\n[Context 2]\nhttps://career-advising.ndsu.edu/jobs/starkey-hearing-technologies-patient-services-coordinator-pinesville-la/\n[Context 3]\nhttps://career-advising.ndsu.edu/videos/crop-and-weed-sciences/",
+      "route_status": "VERIFIED",
+      "route_score": 1.0,
+      "claim_count": 5,
+      "scope": "IN_SCOPE",
+      "evidence_overlap": 0.4286
+    },
+    {
+      "question": "What are the standard office hours for the center?",
+      "ground_truth": "Standard office hours are Monday through Friday, 8:00 AM to 5:00 PM.",
+      "trust_answer_raw": "According to Context [Context 3], the standard office hours for the Career and Advising Center are:\n\n\"Please note changes to hours of operation during the summer, holidays, and days with no scheduled classes.\"\n\nHowever, it is specified that during the school year, the center can be found in Ceres Hall 306 from 8 am to 5 pm.\n\nSource: https://career-advising.ndsu.edu/events/2026/03/",
+      "trust_answer_routed": "According to Context [Context 3], the standard office hours for the Career and Advising Center are:\n\n\"Please note changes to hours of operation during the summer, holidays, and days with no scheduled classes.\"\n\nHowever, it is specified that during the school year, the center can be found in Ceres Hall 306 from 8 am to 5 pm.\n\nSource: https://career-advising.ndsu.edu/events/2026/03/",
+      "route_status": "VERIFIED",
+      "route_score": 0.9256,
+      "claim_count": 12,
+      "scope": "IN_SCOPE",
+      "evidence_overlap": 0.6154
+    },
+    {
+      "question": "How do office hours change during the summer and break periods?",
+      "ground_truth": "Summer and break hours are Monday through Friday, 7:30 AM to 4:00 PM.",
+      "trust_answer_raw": "According to the provided context, during the summer and break periods, the office hours for the NDSU Career and Advising Center are:\n\nM Monday 7:30AM - 4:00PM\nT Tuesday 7:30AM - 4:00PM\nW Wednesday 8:00AM - 5:00PM\nTH Thursday 8:00AM - 5:00PM\nF Friday 8:00AM - 5:00PM\n\nSource:\nhttp://career-advising.ndsu.edu/\nhttps://career-advising.ndsu.edu",
+      "trust_answer_routed": "According to the provided context, during the summer and break periods, the office hours for the NDSU Career and Advising Center are:\n\nM Monday 7:30AM - 4:00PM\nT Tuesday 7:30AM - 4:00PM\nW Wednesday 8:00AM - 5:00PM\nTH Thursday 8:00AM - 5:00PM\nF Friday 8:00AM - 5:00PM\n\nSource:\nhttp://career-advising.ndsu.edu/\nhttps://career-advising.ndsu.edu",
+      "route_status": "VERIFIED",
+      "route_score": 1.0,
+      "claim_count": 6,
+      "scope": "IN_SCOPE",
+      "evidence_overlap": 0.6
+    },
+    {
+      "question": "What is the primary career management tool used at NDSU for jobs and internships?",
+      "ground_truth": "The primary career management tool is Handshake.",
+      "trust_answer_raw": "According to the provided context, the primary career management tool used at NDSU for jobs and internships is Handshake. This is mentioned in both Context 1 and Context 2.\n\nContext 1: \"Handshake is the official North Dakota State University student and alumni job board, posting information about current on-campus employment, including work-study and internships, both part-time and full-time positions for graduating students, or graduate assistantship opportunities.\"\n\nContext 2: \"Handshake : This is the first place we encourage students to look for opportunities. Handshake was specifically created for college students. Employers turn to this job board first in order to find student talent. Login with your NDSU student credentials. (NDSU Alumni have access to Handshake as well!)\"\n\nSource:\nhttps://career-advising.ndsu.edu/channels/career-support/posts/page/19/\nhttps://career-advising.ndsu.edu/resources/how-to-find-an-internship/",
+      "trust_answer_routed": "According to the provided context, the primary career management tool used at NDSU for jobs and internships is Handshake. This is mentioned in both Context 1 and Context 2.\n\nContext 1: \"Handshake is the official North Dakota State University student and alumni job board, posting information about current on-campus employment, including work-study and internships, both part-time and full-time positions for graduating students, or graduate assistantship opportunities.\"\n\nContext 2: \"Handshake : This is the first place we encourage students to look for opportunities. Handshake was specifically created for college students. Employers turn to this job board first in order to find student talent. Login with your NDSU student credentials. (NDSU Alumni have access to Handshake as well!)\"\n\nSource:\nhttps://career-advising.ndsu.edu/channels/career-support/posts/page/19/\nhttps://career-advising.ndsu.edu/resources/how-to-find-an-internship/",
+      "route_status": "VERIFIED",
+      "route_score": 1.0,
+      "claim_count": 12,
+      "scope": "IN_SCOPE",
+      "evidence_overlap": 0.7143
+    },
+    {
+      "question": "What must incoming students do before creating a Handshake account?",
+      "ground_truth": "Incoming students must claim their NDSU email Bison Credentials first.",
+      "trust_answer_raw": "According to the provided context, incoming students must \"Claim your NDSU Email (Bison Credentials) here\" before creating a Handshake account. [Context 1]\n\nSource:\nhttps://career-advising.ndsu.edu/handshake/",
+      "trust_answer_routed": "According to the provided context, incoming students must \"Claim your NDSU Email (Bison Credentials) here\" before creating a Handshake account. [Context 1]\n\nSource:\nhttps://career-advising.ndsu.edu/handshake/",
+      "route_status": "VERIFIED",
+      "route_score": 1.0,
+      "claim_count": 12,
+      "scope": "IN_SCOPE",
+      "evidence_overlap": 0.8
+    },
+    {
+      "question": "Which email domain should students use to log into Handshake, according to the NDSU guidance note?",
+      "ground_truth": "Students should use @ndsu.edu, not ndus.edu.",
+      "trust_answer_raw": "According to the provided context, students should use \"@ndsu.edu\" to log into Handshake.\n\nSource:\n[Context 1]\nhttps://career-advising.ndsu.edu/handshake/",
+      "trust_answer_routed": "According to the provided context, students should use \"@ndsu.edu\" to log into Handshake.\n\nSource:\n[Context 1]\nhttps://career-advising.ndsu.edu/handshake/",
+      "route_status": "VERIFIED",
+      "route_score": 1.0,
+      "claim_count": 3,
+      "scope": "IN_SCOPE",
+      "evidence_overlap": 0.8571
+    },
+    {
+      "question": "What types of opportunities are listed in Handshake according to the NDSU career site?",
+      "ground_truth": "Part-time, full-time, work-study, volunteer, graduate assistantship, and internship opportunities are listed in Handshake.",
+      "trust_answer_raw": "According to the provided context, Handshake is a platform where students can post their online profile and apply for internships and other opportunities. Employers can post open positions that students can apply to. The types of opportunities listed in Handshake include all types of jobs and internships for students and alumni to see and apply to.\n\nSource: [Context 3] Ask a CM! – Career and Advising Center – North Dakota State University",
+      "trust_answer_routed": "According to the provided context, Handshake is a platform where students can post their online profile and apply for internships and other opportunities. Employers can post open positions that students can apply to. The types of opportunities listed in Handshake include all types of jobs and internships for students and alumni to see and apply to.\n\nSource: [Context 3] Ask a CM! – Career and Advising Center – North Dakota State University",
+      "route_status": "VERIFIED",
+      "route_score": 0.9306,
+      "claim_count": 12,
+      "scope": "IN_SCOPE",
+      "evidence_overlap": 0.4667
+    },
+    {
+      "question": "How is Handshake described on NDSU career resources pages?",
+      "ground_truth": "Handshake is described as the number one place students find jobs and internships.",
+      "trust_answer_raw": "According to the provided context, Handshake is described as an \"online platform\" that is introduced as a resource for incoming students this fall. It is mentioned in the article titled \"Welcome to NDSU!\" under the section \"Handshake Handshake is an online platform that allows you to search and apply for internships, jobs, and graduate school opportunities.\"\n\nSource:\nhttps://career-advising.ndsu.edu/channels/explore-majors-careers-opportunities/posts/page/1/\nhttps://career-advising.ndsu.edu/videos/creating-an-employer-account-for-ndsu-faculty-and-staff/",
+      "trust_answer_routed": "According to the provided context, Handshake is described as an \"online platform\" that is introduced as a resource for incoming students this fall. It is mentioned in the article titled \"Welcome to NDSU!\" under the section \"Handshake Handshake is an online platform that allows you to search and apply for internships, jobs, and graduate school opportunities.\"\n\nSource:\nhttps://career-advising.ndsu.edu/channels/explore-majors-careers-opportunities/posts/page/1/\nhttps://career-advising.ndsu.edu/videos/creating-an-employer-account-for-ndsu-faculty-and-staff/",
+      "route_status": "VERIFIED",
+      "route_score": 0.9192,
+      "claim_count": 12,
+      "scope": "IN_SCOPE",
+      "evidence_overlap": 0.6154
+    },
+    {
+      "question": "Where are the large-scale Fall and Spring Career Expos typically held?",
+      "ground_truth": "They are typically held at the Fargodome.",
+      "trust_answer_raw": "According to the provided context, the large-scale Fall Career Expo is typically held at the Fargodome.\n\nSource:\n[Context 1] https://career-advising.ndsu.edu/blog/page/7/\n[Context 3] https://career-advising.ndsu.edu/channels/career-fairs/\n\nThe Spring Career Expo is also typically held at the Fargodome.\n\nSource:\n[Context 2] https://career-advising.ndsu.edu/channels/career-fairs/\n[Context 3] https://career-advising.ndsu.edu/channels/career-fairs/",
+      "trust_answer_routed": "According to the provided context, the large-scale Fall Career Expo is typically held at the Fargodome.\n\nSource:\n[Context 1] https://career-advising.ndsu.edu/blog/page/7/\n[Context 3] https://career-advising.ndsu.edu/channels/career-fairs/\n\nThe Spring Career Expo is also typically held at the Fargodome.\n\nSource:\n[Context 2] https://career-advising.ndsu.edu/channels/career-fairs/\n[Context 3] https://career-advising.ndsu.edu/channels/career-fairs/",
+      "route_status": "VERIFIED",
+      "route_score": 1.0,
+      "claim_count": 9,
+      "scope": "IN_SCOPE",
+      "evidence_overlap": 0.5714
+    },
+    {
+      "question": "How do employers register for the H.E.L.P.S. Career Fair?",
+      "ground_truth": "Employers register by emailing the Events Manager directly.",
+      "trust_answer_raw": "According to the provided context, employers can register for the H.E.L.P.S. Career Fair by emailing the Events Manager to enquire about registering. The registration opens on December 1, 2025, and closes on February 18, 2026.\n\nSource:\n[Context 1]",
+      "trust_answer_routed": "According to the provided context, employers can register for the H.E.L.P.S. Career Fair by emailing the Events Manager to enquire about registering. The registration opens on December 1, 2025, and closes on February 18, 2026.\n\nSource:\n[Context 1]",
+      "route_status": "VERIFIED",
+      "route_score": 1.0,
+      "claim_count": 6,
+      "scope": "IN_SCOPE",
+      "evidence_overlap": 0.625
+    },
+    {
+      "question": "What is the minimum cumulative GPA required to register an internship for academic credit?",
+      "ground_truth": "The minimum cumulative GPA required is 2.0.",
+      "trust_answer_raw": "According to Context 1, students have a minimum cumulative 2.0 GPA prior to internship registration.\n\nSource:\nhttps://career-advising.ndsu.edu/blog/2019/10/25/ask-a-cm-4/",
+      "trust_answer_routed": "According to Context 1, students have a minimum cumulative 2.0 GPA prior to internship registration.\n\nSource:\nhttps://career-advising.ndsu.edu/blog/2019/10/25/ask-a-cm-4/",
+      "route_status": "VERIFIED",
+      "route_score": 1.0,
+      "claim_count": 5,
+      "scope": "IN_SCOPE",
+      "evidence_overlap": 1.0
+    },
+    {
+      "question": "How many work hours are required in a semester to maintain full-time status while registered for 3 internship credits?",
+      "ground_truth": "A minimum of 300 work hours is required.",
+      "trust_answer_raw": "According to the context, students can maintain a full-time student status by registering for 3 credits through the NDSU Career and Advising Center or by working 300+ hours in a given semester.\n\nSource:\nhttps://career-advising.ndsu.edu/blog/2019/10/25/ask-a-cm-4/",
+      "trust_answer_routed": "According to the context, students can maintain a full-time student status by registering for 3 credits through the NDSU Career and Advising Center or by working 300+ hours in a given semester.\n\nSource:\nhttps://career-advising.ndsu.edu/blog/2019/10/25/ask-a-cm-4/",
+      "route_status": "VERIFIED",
+      "route_score": 1.0,
+      "claim_count": 12,
+      "scope": "IN_SCOPE",
+      "evidence_overlap": 1.0
+    },
+    {
+      "question": "What academic requirement must F-1 students generally meet before off-campus work eligibility?",
+      "ground_truth": "They generally must complete one full academic year at NDSU before off-campus work eligibility.",
+      "trust_answer_raw": "According to the provided context, there is no specific information about the academic requirement that F-1 students must meet before off-campus work eligibility. However, I can suggest that you refer to the International Student Employment Resources page [Context 1] for more information on employment documentation and practices.\n\nSource:\nhttps://career-advising.ndsu.edu/resources/international-student-employment-resources/",
+      "trust_answer_routed": "According to the provided context, there is no specific information about the academic requirement that F-1 students must meet before off-campus work eligibility. However, I can suggest that you refer to the International Student Employment Resources page [Context 1] for more information on employment documentation and practices.\n\nSource:\nhttps://career-advising.ndsu.edu/resources/international-student-employment-resources/",
+      "route_status": "VERIFIED",
+      "route_score": 0.933,
+      "claim_count": 12,
+      "scope": "IN_SCOPE",
+      "evidence_overlap": 0.6667
+    },
+    {
+      "question": "Which department requires emailing an application form to ndsu.ime@ndsu.edu for IME 397 pre-approval?",
+      "ground_truth": "The Industrial and Manufacturing Engineering department requires that for IME 397.",
+      "trust_answer_raw": "Based on the provided context, I don't have enough information in my knowledge base to answer this question accurately.\n\nThe contexts provided do not mention any specific department or requirement for emailing an application form to ndsu.ime@ndsu.edu for IME 397 pre-approval. Therefore, I cannot provide a direct answer.\n\nSource: [Context 1], [Context 2], and [Context 3]",
+      "trust_answer_routed": "Based on the provided context, I don't have enough information in my knowledge base to answer this question accurately.\n\nThe contexts provided do not mention any specific department or requirement for emailing an application form to ndsu.ime@ndsu.edu for IME 397 pre-approval. Therefore, I cannot provide a direct answer.\n\nSource: [Context 1], [Context 2], and [Context 3]",
+      "route_status": "VERIFIED",
+      "route_score": 1.0,
+      "claim_count": 12,
+      "scope": "IN_SCOPE",
+      "evidence_overlap": 0.0
+    },
+    {
+      "question": "On what date is the event Unlock Your Future: Meet MAHUBE-OTWA and Explore Career Paths listed?",
+      "ground_truth": "It is listed for Tuesday, April 21, 2026.",
+      "trust_answer_raw": "According to the provided context, the event \"Unlock Your Future: Meet MAHUBE-OTWA & Explore Career Paths!\" is scheduled for:\n\n* Date: Tuesday, April 21st\n* Time: 12pm - 2pm\n\nSource:\n[Context 1]\n[Context 2]\n[Context 3]\n\nhttps://career-advising.ndsu.edu/channels/career-support/posts/page/10/\nhttps://career-advising.ndsu.edu/channels/career-support/posts/page/23/\nhttps://career-advising.ndsu.edu/channels/career-support/posts/page/9/",
+      "trust_answer_routed": "According to the provided context, the event \"Unlock Your Future: Meet MAHUBE-OTWA & Explore Career Paths!\" is scheduled for:\n\n* Date: Tuesday, April 21st\n* Time: 12pm - 2pm\n\nSource:\n[Context 1]\n[Context 2]\n[Context 3]\n\nhttps://career-advising.ndsu.edu/channels/career-support/posts/page/10/\nhttps://career-advising.ndsu.edu/channels/career-support/posts/page/23/\nhttps://career-advising.ndsu.edu/channels/career-support/posts/page/9/",
+      "route_status": "VERIFIED",
+      "route_score": 0.9258,
+      "claim_count": 12,
+      "scope": "IN_SCOPE",
+      "evidence_overlap": 0.5
+    },
+    {
+      "question": "What time is the Unlock Your Future: Meet MAHUBE-OTWA and Explore Career Paths event?",
+      "ground_truth": "The event time is 12:00 PM to 2:00 PM.",
+      "trust_answer_raw": "According to Context 1, the \"Unlock Your Future: Meet MAHUBE-OTWA & Explore Career Paths!\" event will take place on Tuesday, April 21st from 12pm - 2pm.\n\nSource:\nhttps://career-advising.ndsu.edu/events/main/",
+      "trust_answer_routed": "According to Context 1, the \"Unlock Your Future: Meet MAHUBE-OTWA & Explore Career Paths!\" event will take place on Tuesday, April 21st from 12pm - 2pm.\n\nSource:\nhttps://career-advising.ndsu.edu/events/main/",
+      "route_status": "VERIFIED",
+      "route_score": 1.0,
+      "claim_count": 7,
+      "scope": "IN_SCOPE",
+      "evidence_overlap": 0.3333
+    },
+    {
+      "question": "Where is the Unlock Your Future: Meet MAHUBE-OTWA and Explore Career Paths event held?",
+      "ground_truth": "It is held in Nueta, Memorial Union.",
+      "trust_answer_raw": "According to the provided context, the \"Unlock Your Future: Meet MAHUBE-OTWA & Explore Career Paths!\" event will be held at Nueta, Memorial Union on North Dakota State University's campus.\n\nSource:\n[Context 1] https://career-advising.ndsu.edu/events/main/\n[Context 3] https://career-advising.ndsu.edu/channels/career-support/posts/page/10/",
+      "trust_answer_routed": "According to the provided context, the \"Unlock Your Future: Meet MAHUBE-OTWA & Explore Career Paths!\" event will be held at Nueta, Memorial Union on North Dakota State University's campus.\n\nSource:\n[Context 1] https://career-advising.ndsu.edu/events/main/\n[Context 3] https://career-advising.ndsu.edu/channels/career-support/posts/page/10/",
+      "route_status": "VERIFIED",
+      "route_score": 1.0,
+      "claim_count": 7,
+      "scope": "IN_SCOPE",
+      "evidence_overlap": 0.5714
+    },
+    {
+      "question": "Does the NDSU Job Shadow Program provide academic credit or payment?",
+      "ground_truth": "No. The NDSU Job Shadow Program does not provide academic credit or payment.",
+      "trust_answer_raw": "According to the provided context, there is no mention of the NDSU Job Shadow Program providing academic credit or payment. The program's focus is on giving students the chance to connect with alumni, community members, and industry professionals to explore potential careers.\n\nSource: https://career-advising.ndsu.edu/ndsu-job-shadow-program/",
+      "trust_answer_routed": "According to the provided context, there is no mention of the NDSU Job Shadow Program providing academic credit or payment. The program's focus is on giving students the chance to connect with alumni, community members, and industry professionals to explore potential careers.\n\nSource: https://career-advising.ndsu.edu/ndsu-job-shadow-program/",
+      "route_status": "VERIFIED",
+      "route_score": 1.0,
+      "claim_count": 12,
+      "scope": "IN_SCOPE",
+      "evidence_overlap": 0.6154
+    },
+    {
+      "question": "What happens if a student cancels less than two days before a job shadow session or no-shows?",
+      "ground_truth": "The student becomes ineligible for future job shadow sessions.",
+      "trust_answer_raw": "According to the context, students who cancel less than two days prior or no show will not be eligible for future sessions.\n\nSource:\n[Context 1] https://career-advising.ndsu.edu/ndsu-professional-preview-days-host-list-april-2026/\n[Context 2] https://career-advising.ndsu.edu/ndsu-job-shadow-program/",
+      "trust_answer_routed": "According to the context, students who cancel less than two days prior or no show will not be eligible for future sessions.\n\nSource:\n[Context 1] https://career-advising.ndsu.edu/ndsu-professional-preview-days-host-list-april-2026/\n[Context 2] https://career-advising.ndsu.edu/ndsu-job-shadow-program/",
+      "route_status": "VERIFIED",
+      "route_score": 1.0,
+      "claim_count": 12,
+      "scope": "IN_SCOPE",
+      "evidence_overlap": 0.7778
+    },
+    {
+      "question": "Which email is listed for questions about the NDSU Job Shadow Program?",
+      "ground_truth": "The listed contact email is shayla.schumacher@ndsu.edu.",
+      "trust_answer_raw": "According to the provided context, the email listed for questions about the NDSU Job Shadow Program is:\n\nshayla.schumacher@ndsu.edu\n\nSource:\nhttps://career-advising.ndsu.edu/ndsu-job-shadow-program/",
+      "trust_answer_routed": "According to the provided context, the email listed for questions about the NDSU Job Shadow Program is:\n\nshayla.schumacher@ndsu.edu\n\nSource:\nhttps://career-advising.ndsu.edu/ndsu-job-shadow-program/",
+      "route_status": "VERIFIED",
+      "route_score": 1.0,
+      "claim_count": 12,
+      "scope": "IN_SCOPE",
+      "evidence_overlap": 0.8889
+    },
+    {
+      "question": "In the NDSUintern Spotlight, what is Katelynn Riley's major?",
+      "ground_truth": "Her major is Apparel, Retail Merchandising, and Design.",
+      "trust_answer_raw": "According to the provided context [Context 1], Katelynn Riley's major is Apparel, Retail Merchandising, and Design.\n\nSource: https://career-advising.ndsu.edu/blog/2025/12/10/ndsuintern-spotlight-katelynn-riley/",
+      "trust_answer_routed": "According to the provided context [Context 1], Katelynn Riley's major is Apparel, Retail Merchandising, and Design.\n\nSource: https://career-advising.ndsu.edu/blog/2025/12/10/ndsuintern-spotlight-katelynn-riley/",
+      "route_status": "VERIFIED",
+      "route_score": 1.0,
+      "claim_count": 12,
+      "scope": "IN_SCOPE",
+      "evidence_overlap": 0.875
+    },
+    {
+      "question": "In the NDSUintern Spotlight, which company did Katelynn Riley intern with?",
+      "ground_truth": "She interned with Mainstream Boutique.",
+      "trust_answer_raw": "According to the provided context [Context 1], Katelynn Riley interned with Mainstream Boutique.\n\nSource: https://career-advising.ndsu.edu/blog/2025/12/10/ndsuintern-spotlight-katelynn-riley/",
+      "trust_answer_routed": "According to the provided context [Context 1], Katelynn Riley interned with Mainstream Boutique.\n\nSource: https://career-advising.ndsu.edu/blog/2025/12/10/ndsuintern-spotlight-katelynn-riley/",
+      "route_status": "VERIFIED",
+      "route_score": 1.0,
+      "claim_count": 5,
+      "scope": "IN_SCOPE",
+      "evidence_overlap": 0.6
+    },
+    {
+      "question": "In the NDSUintern Spotlight, what was Katelynn Riley's internship title?",
+      "ground_truth": "Her internship title was Small Business Intern.",
+      "trust_answer_raw": "According to the provided context [Context 1], Katelynn Riley's internship title was \"Small Business Intern\".\n\nSource: https://career-advising.ndsu.edu/blog/2025/12/10/ndsuintern-spotlight-katelynn-riley/",
+      "trust_answer_routed": "According to the provided context [Context 1], Katelynn Riley's internship title was \"Small Business Intern\".\n\nSource: https://career-advising.ndsu.edu/blog/2025/12/10/ndsuintern-spotlight-katelynn-riley/",
+      "route_status": "VERIFIED",
+      "route_score": 1.0,
+      "claim_count": 12,
+      "scope": "IN_SCOPE",
+      "evidence_overlap": 0.8571
+    },
+    {
+      "question": "In the NDSUintern Spotlight, where was Katelynn Riley's internship located?",
+      "ground_truth": "Her internship was located in Willmar, Minnesota.",
+      "trust_answer_raw": "According to Context 3, Katelynn Riley's internship was located in Willmar, MN.",
+      "trust_answer_routed": "According to Context 3, Katelynn Riley's internship was located in Willmar, MN.",
+      "route_status": "VERIFIED",
+      "route_score": 0.9383,
+      "claim_count": 12,
+      "scope": "IN_SCOPE",
+      "evidence_overlap": 0.5714
+    },
+    {
+      "question": "In the NDSUintern Spotlight, what is Kai Ding's major?",
+      "ground_truth": "Kai Ding's major is Computer Science.",
+      "trust_answer_raw": "According to Context 3, Kai Ding's major is Computer Science.\n\nSource: https://career-advising.ndsu.edu/blog/2025/12/03/ndsuintern-spotlight-kai-ding/",
+      "trust_answer_routed": "According to Context 3, Kai Ding's major is Computer Science.\n\nSource: https://career-advising.ndsu.edu/blog/2025/12/03/ndsuintern-spotlight-kai-ding/",
+      "route_status": "VERIFIED",
+      "route_score": 0.8555,
+      "claim_count": 12,
+      "scope": "IN_SCOPE",
+      "evidence_overlap": 1.0
+    },
+    {
+      "question": "In the NDSUintern Spotlight, which company did Kai Ding intern with?",
+      "ground_truth": "Kai Ding interned with Van Clemens Wealth Management.",
+      "trust_answer_raw": "According to the provided context [Context 1], Kai Ding interned with Van Clemens Wealth Management.\n\nSource: https://career-advising.ndsu.edu/blog/2025/12/03/ndsuintern-spotlight-kai-ding/",
+      "trust_answer_routed": "According to the provided context [Context 1], Kai Ding interned with Van Clemens Wealth Management.\n\nSource: https://career-advising.ndsu.edu/blog/2025/12/03/ndsuintern-spotlight-kai-ding/",
+      "route_status": "VERIFIED",
+      "route_score": 0.9482,
+      "claim_count": 12,
+      "scope": "IN_SCOPE",
+      "evidence_overlap": 0.875
+    },
+    {
+      "question": "In the NDSUintern Spotlight, what was Kai Ding's internship title?",
+      "ground_truth": "Kai Ding's internship title was AI Research Intern.",
+      "trust_answer_raw": "According to the provided context [Context 1], Kai Ding's internship title was \"AI Research Intern\".\n\nSource: https://career-advising.ndsu.edu/blog/2025/12/03/ndsuintern-spotlight-kai-ding/",
+      "trust_answer_routed": "According to the provided context [Context 1], Kai Ding's internship title was \"AI Research Intern\".\n\nSource: https://career-advising.ndsu.edu/blog/2025/12/03/ndsuintern-spotlight-kai-ding/",
+      "route_status": "VERIFIED",
+      "route_score": 0.8275,
+      "claim_count": 12,
+      "scope": "IN_SCOPE",
+      "evidence_overlap": 0.8889
+    },
+    {
+      "question": "In the NDSUintern Spotlight, where was Kai Ding's internship located?",
+      "ground_truth": "Kai Ding's internship was located in Bloomington, Minnesota.",
+      "trust_answer_raw": "According to Context 3, Kai Ding's internship was located in Bloomington, MN.",
+      "trust_answer_routed": "According to Context 3, Kai Ding's internship was located in Bloomington, MN.",
+      "route_status": "VERIFIED",
+      "route_score": 1.0,
+      "claim_count": 12,
+      "scope": "IN_SCOPE",
+      "evidence_overlap": 0.6667
+    },
+    {
+      "question": "What is NDSU's athletic mascot?",
+      "ground_truth": "NDSU's athletic mascot is Thundar the Bison.",
+      "trust_answer_raw": "I don't have enough information in my knowledge base to answer this question accurately.\n\nThe provided context only includes information about career advice, job postings, company reviews from employees, and rankings of the best companies and industry employers. There is no mention of athletics or a mascot. Therefore, I cannot provide an accurate answer based on the given context.",
+      "trust_answer_routed": "I don't have enough information in my knowledge base to answer this question accurately.\n\nThe provided context only includes information about career advice, job postings, company reviews from employees, and rankings of the best companies and industry employers. There is no mention of athletics or a mascot. Therefore, I cannot provide an accurate answer based on the given context.",
+      "route_status": "VERIFIED",
+      "route_score": 0.929,
+      "claim_count": 12,
+      "scope": "OUT_OF_SCOPE",
+      "evidence_overlap": 0.375
+    },
+    {
+      "question": "What is the athletics nickname used by NDSU teams?",
+      "ground_truth": "NDSU teams are known as the Bison.",
+      "trust_answer_raw": "The athletics nickname used by NDSU teams is not mentioned in the provided context. Therefore, I don't have enough information in my knowledge base to answer this question accurately.\n\nSources:\n[Context 1]\n[Context 2]\n[Context 3]",
+      "trust_answer_routed": "The athletics nickname used by NDSU teams is not mentioned in the provided context. Therefore, I don't have enough information in my knowledge base to answer this question accurately.\n\nSources:\n[Context 1]\n[Context 2]\n[Context 3]",
+      "route_status": "VERIFIED",
+      "route_score": 1.0,
+      "claim_count": 12,
+      "scope": "OUT_OF_SCOPE",
+      "evidence_overlap": 0.1429
+    },
+    {
+      "question": "What are NDSU's official school colors?",
+      "ground_truth": "NDSU's official school colors are green and yellow.",
+      "trust_answer_raw": "According to the provided context, I don't have enough information in my knowledge base to answer this question accurately. The contexts only mention the Career and Advising Center, Theatre Arts, and contact information for the university, but do not specify the official school colors.\n\nSource:\n[Context 1]\n[Context 2]",
+      "trust_answer_routed": "According to the provided context, I don't have enough information in my knowledge base to answer this question accurately. The contexts only mention the Career and Advising Center, Theatre Arts, and contact information for the university, but do not specify the official school colors.\n\nSource:\n[Context 1]\n[Context 2]",
+      "route_status": "VERIFIED",
+      "route_score": 1.0,
+      "claim_count": 6,
+      "scope": "OUT_OF_SCOPE",
+      "evidence_overlap": 0.2222
+    },
+    {
+      "question": "In what year was NDSU founded?",
+      "ground_truth": "NDSU was founded in 1890.",
+      "trust_answer_raw": "I don't have enough information in my knowledge base to answer this question accurately. The provided context does not contain any information about the founding year of North Dakota State University (NDSU).",
+      "trust_answer_routed": "I don't have enough information in my knowledge base to answer this question accurately. The provided context does not contain any information about the founding year of North Dakota State University (NDSU).",
+      "route_status": "VERIFIED",
+      "route_score": 1.0,
+      "claim_count": 12,
+      "scope": "OUT_OF_SCOPE",
+      "evidence_overlap": 0.2
+    },
+    {
+      "question": "In which city is NDSU located?",
+      "ground_truth": "NDSU is located in Fargo, North Dakota.",
+      "trust_answer_raw": "Fargo, on the Minnesota border. (Source: https://career-advising.ndsu.edu/jobs/ndsu-human-resources-and-payroll-communications-coordinator-2958764/)",
+      "trust_answer_routed": "Fargo, on the Minnesota border. (Source: https://career-advising.ndsu.edu/jobs/ndsu-human-resources-and-payroll-communications-coordinator-2958764/)",
+      "route_status": "VERIFIED",
+      "route_score": 0.9273,
+      "claim_count": 12,
+      "scope": "OUT_OF_SCOPE",
+      "evidence_overlap": 0.8571
+    },
+    {
+      "question": "What does the acronym NDSU stand for?",
+      "ground_truth": "NDSU stands for North Dakota State University.",
+      "trust_answer_raw": "NDSU stands for North Dakota State University.\n\nSources:\n[Context 1] https://career-advising.ndsu.edu/videos/theatre-arts/\n[Context 2] https://career-advising.ndsu.edu/videos/psychology/\n[Context 3] https://career-advising.ndsu.edu/jobs/ndsu-human-resources-and-payroll-communications-coordinator-2958764/",
+      "trust_answer_routed": "NDSU stands for North Dakota State University.\n\nSources:\n[Context 1] https://career-advising.ndsu.edu/videos/theatre-arts/\n[Context 2] https://career-advising.ndsu.edu/videos/psychology/\n[Context 3] https://career-advising.ndsu.edu/jobs/ndsu-human-resources-and-payroll-communications-coordinator-2958764/",
+      "route_status": "VERIFIED",
+      "route_score": 1.0,
+      "claim_count": 12,
+      "scope": "OUT_OF_SCOPE",
+      "evidence_overlap": 0.8571
+    },
+    {
+      "question": "What type of institution is NDSU?",
+      "ground_truth": "NDSU is a public land-grant research university.",
+      "trust_answer_raw": "North Dakota State University (NDSU) is a student-focused, land-grant, research university.",
+      "trust_answer_routed": "North Dakota State University (NDSU) is a student-focused, land-grant, research university.",
+      "route_status": "VERIFIED",
+      "route_score": 1.0,
+      "claim_count": 7,
+      "scope": "OUT_OF_SCOPE",
+      "evidence_overlap": 1.0
+    },
+    {
+      "question": "What is the primary domain for NDSU's main website?",
+      "ground_truth": "NDSU's primary website domain is ndsu.edu.",
+      "trust_answer_raw": "I don't have enough information in my knowledge base to answer this question accurately. The provided context only includes specific pages or resources from NDSU, but it does not contain information about the university's main website.",
+      "trust_answer_routed": "I don't have enough information in my knowledge base to answer this question accurately. The provided context only includes specific pages or resources from NDSU, but it does not contain information about the university's main website.",
+      "route_status": "VERIFIED",
+      "route_score": 0.9237,
+      "claim_count": 12,
+      "scope": "OUT_OF_SCOPE",
+      "evidence_overlap": 0.2857
+    },
+    {
+      "question": "Which NCAA division does NDSU compete in?",
+      "ground_truth": "NDSU competes in NCAA Division I.",
+      "trust_answer_raw": "According to the provided context, I don't have enough information in my knowledge base to answer this question accurately. The contexts only provide information about the Career and Advising Center at North Dakota State University (NDSU) and do not mention NCAA divisions.\n\nSource:\n[Context 1]\n[Context 2]\n[Context 3]",
+      "trust_answer_routed": "According to the provided context, I don't have enough information in my knowledge base to answer this question accurately. The contexts only provide information about the Career and Advising Center at North Dakota State University (NDSU) and do not mention NCAA divisions.\n\nSource:\n[Context 1]\n[Context 2]\n[Context 3]",
+      "route_status": "VERIFIED",
+      "route_score": 1.0,
+      "claim_count": 12,
+      "scope": "OUT_OF_SCOPE",
+      "evidence_overlap": 0.1667
+    },
+    {
+      "question": "Which conference is NDSU football associated with?",
+      "ground_truth": "NDSU football is associated with the Missouri Valley Football Conference.",
+      "trust_answer_raw": "I don't have enough information in my knowledge base to answer this question accurately.\n\nThe provided context does not contain any information about the conference that NDSU football is associated with. Therefore, I cannot provide an accurate answer.",
+      "trust_answer_routed": "I don't have enough information in my knowledge base to answer this question accurately.\n\nThe provided context does not contain any information about the conference that NDSU football is associated with. Therefore, I cannot provide an accurate answer.",
+      "route_status": "VERIFIED",
+      "route_score": 0.7517,
+      "claim_count": 12,
+      "scope": "OUT_OF_SCOPE",
+      "evidence_overlap": 0.4444
+    },
+    {
+      "question": "Which conference are many NDSU athletics programs associated with?",
+      "ground_truth": "Many NDSU athletics programs are associated with The Summit League.",
+      "trust_answer_raw": "According to the context, there is no information provided about NDSU athletics programs or conferences. Therefore, I don't have enough information in my knowledge base to answer this question accurately.\n\nSource:\n[Context 1]\n[Context 2]\n[Context 3]",
+      "trust_answer_routed": "According to the context, there is no information provided about NDSU athletics programs or conferences. Therefore, I don't have enough information in my knowledge base to answer this question accurately.\n\nSource:\n[Context 1]\n[Context 2]\n[Context 3]",
+      "route_status": "VERIFIED",
+      "route_score": 0.8282,
+      "claim_count": 12,
+      "scope": "OUT_OF_SCOPE",
+      "evidence_overlap": 0.5
+    },
+    {
+      "question": "What is the name of NDSU's student newspaper?",
+      "ground_truth": "NDSU's student newspaper is The Spectrum.",
+      "trust_answer_raw": "I don't have enough information in my knowledge base to answer this question accurately. The provided context does not mention the name of NDSU's student newspaper.\n\nSource:\n[Context 1]\n[Context 2]\n[Context 3]",
+      "trust_answer_routed": "I don't have enough information in my knowledge base to answer this question accurately. The provided context does not mention the name of NDSU's student newspaper.\n\nSource:\n[Context 1]\n[Context 2]\n[Context 3]",
+      "route_status": "VERIFIED",
+      "route_score": 0.8985,
+      "claim_count": 12,
+      "scope": "OUT_OF_SCOPE",
+      "evidence_overlap": 0.1429
+    },
+    {
+      "question": "What is the name of the NDSU fight song?",
+      "ground_truth": "NDSU's fight song is On Bison.",
+      "trust_answer_raw": "I don't have enough information in my knowledge base to answer this question accurately. The provided context does not mention the name of the NDSU fight song.",
+      "trust_answer_routed": "I don't have enough information in my knowledge base to answer this question accurately. The provided context does not mention the name of the NDSU fight song.",
+      "route_status": "VERIFIED",
+      "route_score": 0.9093,
+      "claim_count": 12,
+      "scope": "OUT_OF_SCOPE",
+      "evidence_overlap": 0.2857
+    },
+    {
+      "question": "Which major college football subdivision does NDSU football play in?",
+      "ground_truth": "NDSU football plays in the NCAA FCS subdivision.",
+      "trust_answer_raw": "I don't have enough information in my knowledge base to answer this question accurately.\n\nThe provided contexts do not contain any information about NDSU football or its division. The contexts only provide general information about the university, its departments, and job postings. Therefore, I cannot provide an accurate answer based on the given context.",
+      "trust_answer_routed": "I don't have enough information in my knowledge base to answer this question accurately.\n\nThe provided contexts do not contain any information about NDSU football or its division. The contexts only provide general information about the university, its departments, and job postings. Therefore, I cannot provide an accurate answer based on the given context.",
+      "route_status": "VERIFIED",
+      "route_score": 0.8207,
+      "claim_count": 12,
+      "scope": "OUT_OF_SCOPE",
+      "evidence_overlap": 0.375
+    },
+    {
+      "question": "What is the official name of NDSU's libraries unit?",
+      "ground_truth": "The official libraries unit is NDSU Libraries.",
+      "trust_answer_raw": "According to the provided context, there is no mention of the official name of NDSU's libraries unit. Therefore, I don't have enough information in my knowledge base to answer this question accurately.\n\nSource: https://career-advising.ndsu.edu/jobs/idaho-department-of-health-and-welfare-family-service-worker-5/",
+      "trust_answer_routed": "According to the provided context, there is no mention of the official name of NDSU's libraries unit. Therefore, I don't have enough information in my knowledge base to answer this question accurately.\n\nSource: https://career-advising.ndsu.edu/jobs/idaho-department-of-health-and-welfare-family-service-worker-5/",
+      "route_status": "VERIFIED",
+      "route_score": 0.9442,
+      "claim_count": 12,
+      "scope": "OUT_OF_SCOPE",
+      "evidence_overlap": 0.1667
+    },
+    {
+      "question": "What is the name of NDSU's central student union building?",
+      "ground_truth": "NDSU's central student union building is the Memorial Union.",
+      "trust_answer_raw": "I don't have enough information in my knowledge base to answer this question accurately.\n\nThe provided context does not mention the name of NDSU's central student union building. Therefore, I cannot provide an accurate answer.",
+      "trust_answer_routed": "I don't have enough information in my knowledge base to answer this question accurately.\n\nThe provided context does not mention the name of NDSU's central student union building. Therefore, I cannot provide an accurate answer.",
+      "route_status": "VERIFIED",
+      "route_score": 0.8992,
+      "claim_count": 12,
+      "scope": "OUT_OF_SCOPE",
+      "evidence_overlap": 0.2222
+    },
+    {
+      "question": "What university system is NDSU part of?",
+      "ground_truth": "NDSU is part of the North Dakota University System.",
+      "trust_answer_raw": "Based on the provided context, I don't have enough information in my knowledge base to answer this question accurately.\n\nHowever, if you're looking for a broader answer, North Dakota State University (NDSU) is a public research university located in Fargo, North Dakota. It's part of the Minnesota State Colleges and Universities system (Minnesota State).\n\nSource:\n[Context 1] https://career-advising.ndsu.edu/videos/theatre-arts/\n[Context 3] https://career-advising.ndsu.edu/videos/psychology/",
+      "trust_answer_routed": "Based on the provided context, I don't have enough information in my knowledge base to answer this question accurately.\n\nHowever, if you're looking for a broader answer, North Dakota State University (NDSU) is a public research university located in Fargo, North Dakota. It's part of the Minnesota State Colleges and Universities system (Minnesota State).\n\nSource:\n[Context 1] https://career-advising.ndsu.edu/videos/theatre-arts/\n[Context 3] https://career-advising.ndsu.edu/videos/psychology/",
+      "route_status": "VERIFIED",
+      "route_score": 0.7702,
+      "claim_count": 7,
+      "scope": "OUT_OF_SCOPE",
+      "evidence_overlap": 0.7778
+    },
+    {
+      "question": "What is the official abbreviation commonly used for North Dakota State University athletics?",
+      "ground_truth": "The official abbreviation commonly used is NDSU Bison.",
+      "trust_answer_raw": "According to the provided context, there is no information about the official abbreviation commonly used for North Dakota State University athletics. Therefore, I don't have enough information in my knowledge base to answer this question accurately.\n\nSource:\n[Context 1]\n[Context 2]\n[Context 3]",
+      "trust_answer_routed": "According to the provided context, there is no information about the official abbreviation commonly used for North Dakota State University athletics. Therefore, I don't have enough information in my knowledge base to answer this question accurately.\n\nSource:\n[Context 1]\n[Context 2]\n[Context 3]",
+      "route_status": "VERIFIED",
+      "route_score": 0.9145,
+      "claim_count": 12,
+      "scope": "OUT_OF_SCOPE",
+      "evidence_overlap": 0.125
+    },
+    {
+      "question": "What is the name of NDSU's extension service organization?",
+      "ground_truth": "It is known as NDSU Extension.",
+      "trust_answer_raw": "Based on the provided context, I found that the information about NDSU's extension service organization is not present in either Context 1 or Context 2. Therefore, I don't have enough information in my knowledge base to answer this question accurately.\n\nSource:\n[Context 1]\nhttps://career-advising.ndsu.edu/blog/2019/04/18/ndsuintern-spotlight-22/\n[Context 2]\nhttps://career-advising.ndsu.edu/jobs/idaho-department-of-health-and-welfare-family-service-worker-5/",
+      "trust_answer_routed": "Based on the provided context, I found that the information about NDSU's extension service organization is not present in either Context 1 or Context 2. Therefore, I don't have enough information in my knowledge base to answer this question accurately.\n\nSource:\n[Context 1]\nhttps://career-advising.ndsu.edu/blog/2019/04/18/ndsuintern-spotlight-22/\n[Context 2]\nhttps://career-advising.ndsu.edu/jobs/idaho-department-of-health-and-welfare-family-service-worker-5/",
+      "route_status": "VERIFIED",
+      "route_score": 1.0,
+      "claim_count": 12,
+      "scope": "OUT_OF_SCOPE",
+      "evidence_overlap": 0.1667
+    },
+    {
+      "question": "What is the university's state location as shown on official NDSU pages?",
+      "ground_truth": "The university is located in North Dakota.",
+      "trust_answer_raw": "The university's state location, as shown on official NDSU pages, is North Dakota. This information can be found in the following contexts:\n\n[Context 1]\n2802 1301 Administration Ave PO Box 6050 Fargo, ND 58108-6050 701-231-7111 ndsu.cac@ndsu.edu Privacy Policy | Terms of Service Copyright © 2026 North Dakota State University\n\nSource: https://career-advising.ndsu.edu/blog/2019/04/18/ndsuintern-spotlight-22/\n\n[Context 2]\n306 Ceres Hall Dept 2802 1301 Administration Ave PO Box 6050 Fargo, ND 58108-6050 701-231-7111 ndsu.cac@ndsu.edu Privacy Policy | Terms of Service Copyright © 2026 North Dakota State University\n\nSource: https://career-advising.ndsu.edu/jobs/idaho-department-of-health-and-welfare-social-worker/\n\n[Context 3]\neres Hall Dept 2802 1301 Administration Ave PO Box 6050 Fargo, ND 58108-6050 701-231-7111 ndsu.cac@ndsu.edu Privacy Policy | Terms of Service Copyright ©",
+      "trust_answer_routed": "The university's state location, as shown on official NDSU pages, is North Dakota. This information can be found in the following contexts:\n\n[Context 1]\n2802 1301 Administration Ave PO Box 6050 Fargo, ND 58108-6050 701-231-7111 ndsu.cac@ndsu.edu Privacy Policy | Terms of Service Copyright © 2026 North Dakota State University\n\nSource: https://career-advising.ndsu.edu/blog/2019/04/18/ndsuintern-spotlight-22/\n\n[Context 2]\n306 Ceres Hall Dept 2802 1301 Administration Ave PO Box 6050 Fargo, ND 58108-6050 701-231-7111 ndsu.cac@ndsu.edu Privacy Policy | Terms of Service Copyright © 2026 North Dakota State University\n\nSource: https://career-advising.ndsu.edu/jobs/idaho-department-of-health-and-welfare-social-worker/\n\n[Context 3]\neres Hall Dept 2802 1301 Administration Ave PO Box 6050 Fargo, ND 58108-6050 701-231-7111 ndsu.cac@ndsu.edu Privacy Policy | Terms of Service Copyright ©",
+      "route_status": "VERIFIED",
+      "route_score": 0.9364,
+      "claim_count": 12,
+      "scope": "OUT_OF_SCOPE",
+      "evidence_overlap": 0.4286
+    }
+  ]
+}

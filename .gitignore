@@ -1,0 +1,29 @@
+# Environments
+.env
+.venv_new/
+.venv/
+venv/
+ENV/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py[cod]
+
+# Databases and Vector Stores
+data/chroma_db/
+
+# Ad-hoc Runtime Caches
+data/verification_runs/
+
+# Previous results and logs
+data/logs/
+*.log 
+
+data/evaluation_scoped_trust_cache.json
+evaluation_scoped.json
+
+# IDEs
+.vscode/

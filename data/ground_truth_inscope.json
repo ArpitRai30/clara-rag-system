@@ -1,0 +1,66 @@
+[
+  {
+    "question": "Where is the NDSU Career and Advising Center located?",
+    "ground_truth": "The NDSU Career and Advising Center is located in Ceres Hall 306."
+  },
+  {
+    "question": "What is the primary email address for the NDSU Career and Advising Center?",
+    "ground_truth": "The primary email address is ndsu.cac@ndsu.edu."
+  },
+  {
+    "question": "What are the standard office hours for the center?",
+    "ground_truth": "Standard office hours are Monday through Friday, 8:00 AM to 5:00 PM."
+  },
+  {
+    "question": "How do office hours change during the summer?",
+    "ground_truth": "During the summer and institutional breaks, the hours are Monday through Friday, 7:30 AM to 4:00 PM."
+  },
+  {
+    "question": "How do students log in to Bison Advise?",
+    "ground_truth": "Students log in using their North Dakota University System NDUS NETID credentials."
+  },
+  {
+    "question": "What is the primary career management tool used at NDSU for job postings and career fairs?",
+    "ground_truth": "The primary career management tool is Handshake."
+  },
+  {
+    "question": "What must incoming students do before they can access their Handshake account?",
+    "ground_truth": "Incoming students must first claim their NDSU email Bison Credentials through the North Dakota University System portal."
+  },
+  {
+    "question": "What is the typical format for an NDSU campus email address?",
+    "ground_truth": "The format is typically FirstName.LastName@ndus.edu."
+  },
+  {
+    "question": "What is the minimum cumulative GPA required for a student to register an internship for academic credit?",
+    "ground_truth": "Students must have a minimum cumulative 2.0 GPA prior to registration."
+  },
+  {
+    "question": "Where are the large-scale Fall and Spring Career Expos typically held?",
+    "ground_truth": "They are held at the Fargodome."
+  },
+  {
+    "question": "How do employers register for the H.E.L.P.S. Career Fair?",
+    "ground_truth": "Employers must email the Events Manager directly to inquire about registration rather than using the standard Handshake link."
+  },
+  {
+    "question": "What evaluations are required to earn a passing grade in the Internship Program?",
+    "ground_truth": "Students must complete pre-term, mid-term, and final self-evaluations, and the site supervisor must complete a final employer evaluation."
+  },
+  {
+    "question": "What academic requirement must F-1 visa students fulfill before being eligible for off-campus work?",
+    "ground_truth": "F-1 visa holders must typically complete one full academic year at NDSU before they are eligible for off-campus work."
+  },
+  {
+    "question": "How many work hours are required in a semester to maintain full-time student status while registered for 3 credits in the Internship Program?",
+    "ground_truth": "A minimum of 300 work hours is required to maintain full-time student status."
+  },
+  {
+    "question": "Which specific department requires an application form to be emailed to ndsu.ime@ndsu.edu for internship pre-approval?",
+    "ground_truth": "The Industrial Manufacturing Engineering department requires this for IME 397 registration."
+  },
+  {
+    "question": "What is the phone number of the NDSU Career and Advising Center?",
+    "ground_truth": "The phone number of the NDSU Career and Advising Center is 701-231-7111."
+  }
+]

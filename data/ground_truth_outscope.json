@@ -1,0 +1,18 @@
+[
+  {
+    "question": "How are undergraduate internships graded at NDSU?",
+    "ground_truth": "Undergraduate internships are graded on a Pass/Fail basis."
+  },
+  {
+    "question": "What is the maximum number of credits a student can earn through the NDSU Internship Program?",
+    "ground_truth": "Students can register for a total of up to 12 credits with the program during their time at NDSU."
+  },
+  {
+    "question": "Are internships at Northwestern Mutual eligible for FIN 397 credit in the Finance major?",
+    "ground_truth": "No, internships with Northwestern Mutual do not qualify for FIN 397 credit."
+  },
+  {
+    "question": "What prerequisite course must Accounting majors complete before earning internship credit?",
+    "ground_truth": "Accounting majors must complete ACCT 311 with a grade of C or better."
+  }
+]

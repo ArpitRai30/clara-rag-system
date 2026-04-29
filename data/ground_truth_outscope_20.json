@@ -1,0 +1,82 @@
+[
+  {
+    "question": "What is NDSU's athletic mascot?",
+    "ground_truth": "NDSU's athletic mascot is Thundar the Bison."
+  },
+  {
+    "question": "What is the athletics nickname used by NDSU teams?",
+    "ground_truth": "NDSU teams are known as the Bison."
+  },
+  {
+    "question": "What are NDSU's official school colors?",
+    "ground_truth": "NDSU's official school colors are green and yellow."
+  },
+  {
+    "question": "In what year was NDSU founded?",
+    "ground_truth": "NDSU was founded in 1890."
+  },
+  {
+    "question": "In which city is NDSU located?",
+    "ground_truth": "NDSU is located in Fargo, North Dakota."
+  },
+  {
+    "question": "What does the acronym NDSU stand for?",
+    "ground_truth": "NDSU stands for North Dakota State University."
+  },
+  {
+    "question": "What type of institution is NDSU?",
+    "ground_truth": "NDSU is a public land-grant research university."
+  },
+  {
+    "question": "What is the primary domain for NDSU's main website?",
+    "ground_truth": "NDSU's primary website domain is ndsu.edu."
+  },
+  {
+    "question": "Which NCAA division does NDSU compete in?",
+    "ground_truth": "NDSU competes in NCAA Division I."
+  },
+  {
+    "question": "Which conference is NDSU football associated with?",
+    "ground_truth": "NDSU football is associated with the Missouri Valley Football Conference."
+  },
+  {
+    "question": "Which conference are many NDSU athletics programs associated with?",
+    "ground_truth": "Many NDSU athletics programs are associated with The Summit League."
+  },
+  {
+    "question": "What is the name of NDSU's student newspaper?",
+    "ground_truth": "NDSU's student newspaper is The Spectrum."
+  },
+  {
+    "question": "What is the name of the NDSU fight song?",
+    "ground_truth": "NDSU's fight song is On Bison."
+  },
+  {
+    "question": "Which major college football subdivision does NDSU football play in?",
+    "ground_truth": "NDSU football plays in the NCAA FCS subdivision."
+  },
+  {
+    "question": "What is the official name of NDSU's libraries unit?",
+    "ground_truth": "The official libraries unit is NDSU Libraries."
+  },
+  {
+    "question": "What is the name of NDSU's central student union building?",
+    "ground_truth": "NDSU's central student union building is the Memorial Union."
+  },
+  {
+    "question": "What university system is NDSU part of?",
+    "ground_truth": "NDSU is part of the North Dakota University System."
+  },
+  {
+    "question": "What is the official abbreviation commonly used for North Dakota State University athletics?",
+    "ground_truth": "The official abbreviation commonly used is NDSU Bison."
+  },
+  {
+    "question": "What is the name of NDSU's extension service organization?",
+    "ground_truth": "It is known as NDSU Extension."
+  },
+  {
+    "question": "What is the university's state location as shown on official NDSU pages?",
+    "ground_truth": "The university is located in North Dakota."
+  }
+]
