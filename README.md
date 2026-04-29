@@ -90,4 +90,12 @@ python step7_evaluation.py            # 10. Metric Computation
 ```
 
 ---
+## 👥 Contributors
 
+- Arpit Rai
+- Ayush Maurya
+- Ayush Gupta
+- Channdramani Kumar
+
+
+> Feel free to contribute via pull requests.
